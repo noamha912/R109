@@ -1,24 +1,25 @@
+/* l'importation des polices*/
 @import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
-
+/*body, comme son nom l'indique c'est le corp de la page*/
 body{
     background-color:rgb(4, 24, 33);
     margin: 0;
     font-family: "Montserrat", sans-serif;
 }
-
+/*l'en-tete*/
 header{
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 18px;
 }
-
+/*paragraphe de l'en tete, le nom*/ 
 header p{
     color: white;
     font-size: 26px;
     font-family: "Yeseva One", sans-serif;
 }
-
+/*la barre qui traverse la page*/
 .bar{
     position: absolute;
     top: 100px;
@@ -27,24 +28,24 @@ header p{
     height: 1px;
     background-color: rgb(46, 45, 45);
 }
-
+/*l'intro de la page*/
 .photogrph{
     display: flex;
     margin-left: 8%;
     margin-bottom: -2%;
     flex-wrap: wrap;
 }
-
+/*le paragraphe de l'intro*/
 .photogrph p{
     font-family: "Yeseva One", sans-serif;
     color: white;
     font-size: 40px;
 }
-
+/*le petit point turquoise a coté de SOLENE AVRIL*/
 #pntvert{
     color: hsl(162, 72%, 49%);
 }
-
+/*la modification des icones importès de fontawesome*/
 .icones{
     align-content: center;
     justify-self: end;
@@ -52,27 +53,25 @@ header p{
     margin-left:100%;
     display: inline-flex; 
 }
-
 .icones i{
     color: white;
     margin-left: 15px;
     font-size: 20px;
 }
-
+/*les deux mots en turquoise*/
 #deuxmotsdiff{
     color: hsl(162, 77%, 49%);
 }
-
+/*paragraphe en gris entre les mots turquoise et les boutons*/
 main p{
     color: grey;
 }
-
 main .textegris{
     display: flex;
     margin-left: 8%;
     font-size: 20px;
 }
-
+/*les boutons en-dessous des phrases en gris et des images*/
 .bouton{
     font-family: "Montserrat";
     font-size: 20px;
@@ -82,46 +81,35 @@ main .textegris{
     margin: 0;
     color: white;
 }
-
+/*pour chaque bouton cette fois*/
 .bouton div{
     margin-right: 20px;
     text-align: center;
 }
-
+/*le bouton surligné*/
 #boutonvert{
     background-color: #1ed79e;
 }
-
+/*la grille des images*/
 .grille{
     display: grid;
     grid-template-columns: repeat(4, 400px);
     gap: 10px;
     justify-content: center;
 }
-
+/*les images individuelles*/
 .grille img{
     object-fit: cover;
     width: 100%;
     height: auto;
     display: block;
 }
-
-main ul{
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-    color: white;
-    font-size: 10px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
-
+/*le pied de page*/
 footer{
     padding-top: 50%;
     text-align: center;
 }
-
+/*pour les grands écrans*/
 @media (min-width: 1025px){
     .grille{
         padding-top: 30px;
@@ -136,7 +124,7 @@ footer{
         height: 200px;
     }
 }
-
+/*ici les tablettes*/
 @media (min-width: 641px) and (max-width: 1024px){
     .grille{
         display: grid;
@@ -158,7 +146,7 @@ footer{
         font-size: 20px;
     }
 }
-
+/*enfin, les téléphones*/
 @media (max-width: 640px){
     header{
         display: flex;
