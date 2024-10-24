@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+body{
+    background-color:rgb(4, 24, 33);
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 18px;
+}
+
+header p{
+    color: white;
+    font-size: 26px;
+    font-family: "Yeseva One", sans-serif;
+}
+
+.bar{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(46, 45, 45);
+}
+
+.photogrph{
+    display: flex;
+    margin-left: 8%;
+    margin-bottom: -2%;
+    flex-wrap: wrap;
+}
+
+.photogrph p{
+    font-family: "Yeseva One", sans-serif;
+    color: white;
+    font-size: 40px;
+}
+
+#pntvert{
+    color: hsl(162, 72%, 49%);
+}
+
+.icones{
+    align-content: center;
+    justify-self: end;
+    margin: 30px;
+    margin-left:100%;
+    display: inline-flex; 
+}
+
+.icones i{
+    color: white;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+#deuxmotsdiff{
+    color: hsl(162, 77%, 49%);
+}
+
+main p{
+    color: grey;
+}
+
+main .textegris{
+    display: flex;
+    margin-left: 8%;
+    font-size: 20px;
+}
+
+.bouton{
+    font-family: "Montserrat";
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.bouton div{
+    margin-right: 20px;
+    text-align: center;
+}
+
+#boutonvert{
+    background-color: #1ed79e;
+}
+
+.grille{
+    display: grid;
+    grid-template-columns: repeat(4, 400px);
+    gap: 10px;
+    justify-content: center;
+}
+
+.grille img{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+main ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    color: white;
+    font-size: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+footer{
+    padding-top: 50%;
+    text-align: center;
+}
+
+@media (min-width: 1025px){
+    .grille{
+        padding-top: 30px;
+        margin: 40px auto;
+    }
+    .grille-item{
+        max-width: 200px;
+        height: 200px;
+    }
+    .grille-item #Image{
+        max-width: 200px;
+        height: 200px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px){
+    .grille{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 5px;
+        padding-top: 20px;
+    }
+    .grille img{
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+    }
+    .bouton div{
+        font-size: 16px;
+    }
+    .icones i{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 640px){
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+    header p{
+        justify-self: center;
+        font-size: 26px;
+    }
+    .icones{
+        justify-content: center;
+        margin: 10px 0;
+    }
+    .bar{
+        position: absolute;
+        top: 150px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: rgb(46, 45, 45);
+    }
+    .bouton{
+        font-family: "Montserrat";
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        color: white;
+    }
+    .bouton div{
+        margin-right: 15px;
+        text-align: center;
+    }
+    .grille{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        justify-content: center;
+    }
+    .grille img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+}
